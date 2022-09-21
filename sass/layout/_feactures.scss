@@ -1,0 +1,46 @@
+.features {
+  padding-top: 94px;
+}
+
+.features__list {
+  display: flex;
+}
+
+.features__item {
+  max-width: 270px;
+}
+
+.features__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features__card {
+  @extend %align-list;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  background-color: var(--team-background-color);
+}
+
+.features__icon {
+  align-items: center;
+}
+
+.features__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+
+  margin-bottom: 10px;
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+}
