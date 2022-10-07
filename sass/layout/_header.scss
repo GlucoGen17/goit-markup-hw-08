@@ -6,6 +6,7 @@
 
   border-bottom: 1px solid #ECECEC;
   background-color: var(--white-background-color);
+  
 
   @media screen and (max-width: 767px) {
     max-width: 767px;
@@ -21,6 +22,7 @@
 }
 
 .header__logo {
+  @media screen and (max-width: 1200px) {
   margin-right: 93px;
 }
 
@@ -88,6 +90,7 @@
 
 .contact {
   display: flex;
+  outline: red;
 
   @media screen and (max-width: 767px) {
     display: none;
