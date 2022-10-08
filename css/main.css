@@ -810,34 +810,40 @@ ol {
   padding-bottom: 60px;
 }
 
-.footer__container {
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  margin-bottom: 60px;
-}
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 30px 165px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: left;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.footer_flex {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer_flex {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer_flex {
+    margin-right: 70px;
+    margin-left: 0;
   }
 }
 
@@ -850,11 +856,6 @@ ol {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
-}
-@media screen and (min-width: 768px) {
-  .address {
-    margin-bottom: 0;
-  }
 }
 
 .address__item:nth-child(n+2) {
@@ -1221,6 +1222,18 @@ ol {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
+}
 
 .modal-close {
   position: absolute;
@@ -1247,6 +1260,16 @@ ol {
 .modal__form {
   padding: 40px;
   width: 528px;
+}
+@media screen and (min-width: 480px) {
+  .modal__form {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__form {
+    width: 528px;
+  }
 }
 
 .modal__title {
