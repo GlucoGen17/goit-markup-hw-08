@@ -6,8 +6,25 @@
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline
+  align-items: baseline;
+  margin-bottom: 60px; 
+
+    @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px 165px;
+    }
+    @media (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    }
+
+}
+
+.footer_flex {
+  
 }
 
 .footer__logo {
@@ -19,6 +36,9 @@
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
 }
 
 .address__item:nth-child(n + 2) {

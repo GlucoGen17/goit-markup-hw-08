@@ -34,21 +34,21 @@
 }
 
 .team__item {
-  @media screen and (max-width: 479px) {
-    width: 270px;
-  }
+  // @media screen and (max-width: 479px) {
+  //   width: 270px;
+  // }
 
-  @media screen and (min-width: 480px) {
-    width: 450px;
-  }
+  // @media screen and (min-width: 480px) {
+  //   width: 450px;
+  // }
 
-  @media screen and (min-width: 768px) {
-    width: 354px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   width: 354px;
+  // }
 
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   width: 270px;
+  // }
 }
 
 .team__title {

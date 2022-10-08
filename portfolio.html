@@ -22,14 +22,16 @@
         <a class="header__logo logo link" href="./index.html"
           >Web<span class="logo__dark">Studio</span></a
         >
-        <!----------------------Навигация--------------------------->
+
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link link" href="./index.html">Студия</a>
+              <a class="nav__link link nav__link--current" href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="nav__item">
-              <a class="nav__link link nav__link--current" href="./portfolio.html">Портфолио</a>
+              <a class="nav__link link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="nav__item">
               <a class="nav__link link" href="#contact">Контакты</a>
@@ -38,10 +40,10 @@
         </nav>
         <ul class="contact">
           <li class="contact__item">
-            <a class="contact__link link" href="mailto:info@example.com"
+            <a class="contact__link link" href="mailto:info@devstudio.com"
               ><svg class="contact__icon" width="16" height="12">
-              <use href="./images/icons.svg#icon-envelope"></use>
-            </svg>info@example.com</a
+                <use href="./images/icons.svg#icon-envelope"></use></svg
+              >info@example.com</a
             >
           </li>
           <li class="contact__item">
@@ -53,6 +55,96 @@
             >
           </li>
         </ul>
+
+        <button type="button" class="menu-open__btn" data-menu-open>
+          <svg class="menu-open__icon" width="40" height="40">
+            <use href="./images/symbol-mob.svg#icon-menu-mob"></use>
+          </svg>
+        </button>
+        <div class="mob-menu is-hidden flex" data-menu>
+          <div class="mob__container">
+            <div>
+              <button type="button" class="menu-close__btn" data-menu-close>
+                <svg class="menu-open__icon" width="40" height="40">
+                  <use href="./images/symbol-mob.svg#icon-close-mob"></use>
+                </svg>
+              </button>
+              <ul class="mob-menu__list">
+                <li class="mob-menu__item">
+                  <a
+                    href="./index.html"
+                    class="mob-menu__link link mob-menu__link--current"
+                    >Студия</a
+                  >
+                </li>
+                <li class="mob-menu__item">
+                  <a href="./portfolio.html" class="mob-menu__link link"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mob-menu__item">
+                  <a href="" class="mob-menu__link link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div class="mob-contacts">
+                <ul class="mob-contacts__list">
+                  <li class="mob-contacts__item">
+                    <a href="tel:+380961111111" class="mob-contacts__tel link"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                  <li class="mob-contacts__item">
+                    <a
+                      href="mailto:info@devstudio.com"
+                      class="mob-contacts__mail link"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+                <ul class="mob-social__list">
+                  <li class="mob-social__item">
+                    <a
+                      href=""
+                      class="mob-social__link link"
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li class="mob-social__item">
+                    <a
+                      href=""
+                      class="mob-social__link link"
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li class="mob-social__item">
+                    <a
+                      href=""
+                      class="mob-soc__link link"
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li class="mob-social__item">
+                    <a
+                      href=""
+                      class="mob-soc__link link"
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                      >LinkedIn</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
   <main>
@@ -83,7 +175,18 @@
           <li class="projects__item">
             <a href="" class="projects__link link">
               <div class="projects__thumb">
-                <img src="./images/p-1.jpg" alt="Технокряк" width="370" />
+                <picture>
+                  <source
+                  srcset="./images/p-tehnokryk-mob.jpg 1x, ./images/p-tehnokryk-mob-2x.jpg 2x"
+                  media="(max-width: 767px)" />
+                  <source
+                  srcset="./images/p-tehnokryk-tab 1x, ./images/p-tehnokryk-tab-2x.jpg 2x"
+                  media="(max-width: 1199px)" />
+                  <source
+                  srcset="./images/p-tehnokryk.jpg 1x, ./images/p-tehnokryk-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                  <img src="./images/p-tehnokryk-mob" alt="Технокряк" />
+                </picture>
                 <div class="projects__thumb-open">
                   <p class="projects__thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
                     и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -99,7 +202,18 @@
           <li class="projects__item">
             <a href="" class="projects__link link">
               <div class="projects__thumb">
-                <img src="./images/p-2.jpg" alt="Постер New Orlean vs Golden Star" width="370" />
+                <picture>
+                  <source
+                  srcset="./images/p-neworlean-mob.jpg 1x, ./images/p-neworlean-mob-2x.jpg 2x"
+                  media="(max-width: 767px)" />
+                  <source
+                  srcset="./images/p-neworlean-tab 1x, ./images/p-neworlean-tab-2x.jpg 2x"
+                  media="(max-width: 1199px)" />
+                  <source
+                  srcset="./images/p-neworlean.jpg 1x, ./images/p-neworlean-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <img src="./images/p-2.jpg" alt="Постер New Orlean vs Golden Star" />
+                </picture>
                 <div class="projects__thumb-open">
                   <p class="projects__thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
                     и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -115,7 +229,18 @@
           <li class="projects__item">
             <a href="" class="projects__link link">
               <div class="projects__thumb">
-                <img src="./images/p-3.jpg" alt="Ресторан Seafood" width="370" />
+                <picture>
+                  <source
+                  srcset="./images/p-seafood-mob.jpg 1x, ./images/p-seafood-mob-2x.jpg 2x"
+                  media="(max-width: 767px)" />
+                  <source
+                  srcset="./images/p-seafood-tab 1x, ./images/p-seafood-tab-2x.jpg 2x"
+                  media="(max-width: 1199px)" />
+                  <source
+                  srcset="./images/p-seafood.jpg 1x, ./images/p-seafood-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <img src="./images/p-seafood.jpg" alt="Ресторан Seafood"/>
+                </picture>
                 <div class="projects__thumb-open">
                   <p class="projects__thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
                     и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -131,7 +256,18 @@
           <li class="projects__item">
             <a href="" class="projects__link link">
               <div class="projects__thumb">
-                <img src="./images/p-4.jpg" alt="Проект Prime" width="370" />
+                <picture>
+                  <source
+                  srcset="./images/p-prime-mob.jpg 1x, ./images/p-prime-mob-2x.jpg 2x"
+                  media="(max-width: 767px)" />
+                  <source
+                  srcset="./images/p-prime-tab 1x, ./images/p-prime-tab-2x.jpg 2x"
+                  media="(max-width: 1199px)" />
+                  <source
+                  srcset="./images/p-prime.jpg 1x, ./images/p-prime-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <img src="./images/p-prime.jpg" alt="Проект Prime"/>
+                </picture>
                 <div class="projects__thumb-open">
                   <p class="projects__thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
                     и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -147,7 +283,18 @@
           <li class="projects__item">
             <a href="" class="projects__link link">
               <div class="projects__thumb">
-                <img src="./images/p-5.jpg" alt="Проект Boxes" width="370" />
+                <picture>
+                  <source
+                  srcset="./images/p-boxes-mob.jpg 1x, ./images/p-boxes-mob-2x.jpg 2x"
+                  media="(max-width: 767px)" />
+                  <source
+                  srcset="./images/p-boxes-tab 1x, ./images/p-boxes-tab-2x.jpg 2x"
+                  media="(max-width: 1199px)" />
+                  <source
+                  srcset="./images/p-boxes.jpg 1x, ./images/p-boxes-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <img src="./images/p-boxes.jpg" alt="Проект Boxes"/>
+                </picture>
                 <div class="projects__thumb-open">
                   <p class="projects__thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
                     и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -163,7 +310,18 @@
           <li class="projects__item">
             <a href="" class="projects__link link">
               <div class="projects__thumb">
-                <img src="./images/p-6.jpg" alt="Inspiration has no Borders" width="370" />
+                <picture>
+                  <source
+                  srcset="./images/p-borders-mob.jpg 1x, ./images/p-borders-mob-2x.jpg 2x"
+                  media="(max-width: 767px)" />
+                  <source
+                  srcset="./images/p-borders-tab 1x, ./images/p-borders-tab-2x.jpg 2x"
+                  media="(max-width: 1199px)" />
+                  <source
+                  srcset="./images/p-borders.jpg 1x, ./images/p-borders-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <img src="./images/p-borders.jpg" alt="Inspiration has no Borders"/>
+                </picture>
                 <div class="projects__thumb-open">
                   <p class="projects__thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
                     и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -179,7 +337,18 @@
           <li class="projects__item">
             <a href="" class="projects__link link">
               <div class="projects__thumb">
-                <img src="./images/p-7.jpg" alt="Издание Limited Edition" width="370" />
+                <picture>
+                  <source
+                  srcset="./images/p-limitededition-mob.jpg 1x, ./images/p-limitededition-mob-2x.jpg 2x"
+                  media="(max-width: 767px)" />
+                  <source
+                  srcset="./images/p-limitededition-tab 1x, ./images/p-limitededition-tab-2x.jpg 2x"
+                  media="(max-width: 1199px)" />
+                  <source
+                  srcset="./images/p-limitededition.jpg 1x, ./images/p-limitededition-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <img src="./images/p-limitededition.jpg" alt="Издание Limited Edition"/>
+                </picture>
                 <div class="projects__thumb-open">
                   <p class="projects__thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
                     и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -195,7 +364,18 @@
           <li class="projects__item">
             <a href="" class="projects__link link">
               <div class="projects__thumb">
-                <img src="./images/p-8.jpg" alt="Проект LAB" width="370" />
+                <picture>
+                  <source
+                  srcset="./images/p-lab-mob.jpg 1x, ./images/p-lab-mob-2x.jpg 2x"
+                  media="(max-width: 767px)" />
+                  <source
+                  srcset="./images/p-lab-tab 1x, ./images/p-lab-tab-2x.jpg 2x"
+                  media="(max-width: 1199px)" />
+                  <source
+                  srcset="./images/p-lab.jpg 1x, ./images/p-lab-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <img src="./images/p-lab.jpg" alt="Проект LAB"/>
+                </picture>
                 <div class="projects__thumb-open">
                   <p class="projects__thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
                     и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -211,7 +391,18 @@
           <li class="projects__item">
             <a href="" class="projects__link link">
               <div class="projects__thumb">
-                <img src="./images/p-9.jpg" alt="Growing Business" width="370" />
+                <picture>
+                  <source
+                  srcset="./images/p-growingbusiness-mob.jpg 1x, ./images/p-growingbusiness-mob-2x.jpg 2x"
+                  media="(max-width: 767px)" />
+                  <source
+                  srcset="./images/p-growingbusiness-tab 1x, ./images/p-growingbusiness-tab-2x.jpg 2x"
+                  media="(max-width: 1199px)" />
+                  <source
+                  srcset="./images/p-growingbusiness.jpg 1x, ./images/p-growingbusiness-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <img src="./images/p-growingbusiness.jpg" alt="Growing Business"/>
+                </picture>
                 <div class="projects__thumb-open">
                   <p class="projects__thumb-text">Ресурс предлагает комплексные предложения с разным уровнем функционала
                     и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
