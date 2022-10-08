@@ -29,7 +29,9 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link link nav__link--current" href="./index.html">Студия</a>
+              <a class="nav__link link nav__link--current" href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="nav__item">
               <a class="nav__link link" href="./portfolio.html">Портфолио</a>
@@ -41,10 +43,10 @@
         </nav>
         <ul class="contact">
           <li class="contact__item">
-            <a class="contact__link link" href="mailto:info@example.com"
+            <a class="contact__link link" href="mailto:info@devstudio.com"
               ><svg class="contact__icon" width="16" height="12">
-              <use href="./images/icons.svg#icon-envelope"></use>
-            </svg>info@example.com</a
+                <use href="./images/icons.svg#icon-envelope"></use></svg
+              >info@example.com</a
             >
           </li>
           <li class="contact__item">
@@ -56,6 +58,96 @@
             >
           </li>
         </ul>
+
+        <button type="button" class="menu-open__btn" data-menu-open>
+          <svg class="menu-open__icon" width="40" height="40">
+            <use href="./images/symbol-mob.svg#icon-menu-mob"></use>
+          </svg>
+        </button>
+        <div class="mob-menu is-hidden flex" data-menu>
+          <div class="mob__container">
+            <div>
+              <button type="button" class="menu-close__btn" data-menu-close>
+                <svg class="menu-open__icon" width="40" height="40">
+                  <use href="./images/symbol-mob.svg#icon-close-mob"></use>
+                </svg>
+              </button>
+              <ul class="mob-menu__list">
+                <li class="mob-menu__item">
+                  <a
+                    href="./index.html"
+                    class="mob-menu__link link mob-menu__link--current"
+                    >Студия</a
+                  >
+                </li>
+                <li class="mob-menu__item">
+                  <a href="./portfolio.html" class="mob-menu__link link"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mob-menu__item">
+                  <a href="" class="mob-menu__link link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div class="mob-contacts">
+                <ul class="mob-contacts__list">
+                  <li class="mob-contacts__item">
+                    <a href="tel:+380961111111" class="mob-contacts__tel link"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                  <li class="mob-contacts__item">
+                    <a
+                      href="mailto:info@devstudio.com"
+                      class="mob-contacts__mail link"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+                <ul class="mob-social__list">
+                  <li class="mob-social__item">
+                    <a
+                      href=""
+                      class="mob-social__link link"
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li class="mob-social__item">
+                    <a
+                      href=""
+                      class="mob-social__link link"
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li class="mob-social__item">
+                    <a
+                      href=""
+                      class="mob-soc__link link"
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li class="mob-social__item">
+                    <a
+                      href=""
+                      class="mob-soc__link link"
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                      >LinkedIn</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -65,12 +157,14 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button data-modal-open class="hero__btn" type="button">Заказать услугу</button>
+          <button data-modal-open class="hero__btn" type="button">
+            Заказать услугу
+          </button>
         </div>
       </section>
 
       <!----------------------Особености--------------------------->
-      <!-- <section class="features section">
+      <section class="features section">
         <div class="container">
           <ul class="features__list">
             <li class="features__item">
@@ -123,15 +217,19 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!----------------------Чем мы занимаемся-------------------->
-      <!-- <section class="work section">
+      <section class="work section">
         <div class="container">
           <h2 class="work__title">Чем мы занимаемся</h2>
           <ul class="work__list list">
             <li class="work__item">
               <img
+                srcset="
+                  ./images/work-desktop.jpg 1x,                   
+                  ./images/work-desktop-2x.jpg 2x
+                  "
                 src="./images/box-1-2.jpg"
                 alt="рабочий стол програмиста"
                 width="370"
@@ -140,6 +238,10 @@
             </li>
             <li class="work__item">
               <img
+                srcset="
+                  ./images/work-mobile.jpg 1x,                   
+                  ./images/work-mobile-2x.jpg 2x
+                  "
                 src="./images/box-2-2.jpg"
                 alt="разработка мобильных приложений"
                 width="370"
@@ -148,6 +250,10 @@
             </li>
             <li class="work__item">
               <img
+                srcset="
+                  ./images/work-design.jpg 1x,                   
+                  ./images/work-design-2x.jpg 2x
+                  "
                 src="./images/box-3-2.jpg"
                 alt="разработка дизайн"
                 width="370"
@@ -156,15 +262,26 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!----------------------Наша команда-------------------->
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/img.jpg" alt="Дизайнер продукта" width="270" />
+              <picture>
+                <source
+                srcset="./images/team-igor-mob.jpg 1x, ./images/team-igor-mob-2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <source
+                srcset="./images/team-igor-tab.jpg 1x, ./images/team-igor-tab-2x.jpg 2x"
+                media="(max-width: 1199px)" />
+              <source
+                srcset="./images/team-igor.jpg 1x, ./images/team-igor-2x.jpg 2x"
+                media="(min-width: 1200px)" />
+                <img src="./images/team-igor-mob.jpg" alt="Дизайнер продукта"/>
+              </picture>
               <div class="team__workers">
                 <h3 class="team__worker">Игорь Демьяненко</h3>
                 <p class="team__profesion">Product Designer</p>
@@ -217,11 +334,21 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/img-2.jpg"
+              <picture>
+                <source
+                srcset="./images/team-olga-mob.jpg 1x, ./images/team-olga-mob-2x.jpg 2x"
+                media="(max-width: 767px)" />
+                <source
+                srcset="./images/team-olga-tab.jpg 1x, ./images/team-olga-tab-2x.jpg 2x"
+                media="(max-width: 1199px)" />
+                <source
+                srcset="./images/team-olga.jpg 1x, ./images/team-olga-2x.jpg 2x"
+                media="(min-width: 1200px)" />
+                <img
+                src="./images/team-olga-mob.jpg"
                 alt="Фронтенд-разработчик"
-                width="270"
-              />
+                />
+              </picture>
               <div class="team__workers">
                 <h3 class="team__worker">Ольга Репина</h3>
                 <p class="team__profesion">Frontend Developer</p>
@@ -274,7 +401,18 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img-1.jpg" alt="Маркетинг" width="270" />
+              <picture>
+                <source
+                srcset="./images/team-nikolay-mob.jpg 1x, ./images/team-nikolay-mob-2x.jpg 2x"
+                media="(max-width: 767px)" />
+                <source
+                srcset="./images/team-nikolay-tab.jpg 1x, ./images/team-nikolay-tab-2x.jpg 2x"
+                media="(max-width: 1199px)" />
+                <source
+                srcset="./images/team-nikolay.jpg 1x, ./images/team-nikolay-2x.jpg 2x"
+                media="(min-width: 1200px)" />
+                <img src="./images/team-nikolay-mob.jpg" alt="Маркетинг" />
+              </picture>
               <div class="team__workers">
                 <h3 class="team__worker">Николай Тарасов</h3>
                 <p class="team__profesion">Marketing</p>
@@ -327,11 +465,21 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/img-3.jpg"
+              <picture>
+                <source
+                srcset="./images/team-mihkail-mob.jpg 1x, ./images/team-mihkail-mob-2x.jpg 2x"
+                media="(max-width: 767px)" />
+                <source
+                srcset="./images/team-mihkail-tab.jpg 1x, ./images/team-mihkail-tab-2x.jpg 2x"
+                media="(max-width: 1199px)" />
+                <source
+                srcset="./images/team-mihkail.jpg 1x, ./images/team-mihkail-2x.jpg 2x"
+                media="(min-width: 1200px)" />
+                <img
+                src="./images/team-mihkail-mob.jpg"
                 alt="Дизайнер пользовательского интерфейса"
-                width="270"
-              />
+                />
+              </picture>
               <div class="team__workers">
                 <h3 class="team__worker">Михаил Ермаков</h3>
                 <p class="team__profesion">UI Designer</p>
@@ -385,7 +533,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!----------------------Постоянные клиенты--------------------------->
       <!-- <section class="client-section section">
         <div class="container">
@@ -519,37 +667,31 @@
       </div>
     </footer> -->
 
-      <!----------------------Модальне вікно-------------------->
+    <!----------------------Модальне вікно-------------------->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button  data-modal-close type="button" class="modal-close">
+        <button data-modal-close type="button" class="modal-close">
           <svg class="icon-close" width="11" height="11">
-              <use href="./images/icons.svg#icon-close" />
+            <use href="./images/icons.svg#icon-close" />
           </svg>
-          
         </button>
 
         <div class="modal__form">
           <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
 
           <form class="form">
-
             <div class="form__field">
               <label for="name" class="form__label">Имя</label>
               <span class="form__img">
-                <input 
-                  type="text" 
-                  id="name" 
-                  name="name" 
-                  class="form__input" />
+                <input type="text" id="name" name="name" class="form__input" />
                 <svg class="form__icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-person"></use>
                 </svg>
               </span>
             </div>
 
-            <div class="form__field ">
+            <div class="form__field">
               <label for="tel" class="form__label">Телефон</label>
               <span class="form__img">
                 <input type="tel" id="tel" class="form__input" />
@@ -561,7 +703,7 @@
             <div class="form__field">
               <label for="email" class="form__label">Почта</label>
               <span class="form__img">
-              <input type="email" id="email" class="form__input" />
+                <input type="email" id="email" class="form__input" />
                 <svg class="form__icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
@@ -569,7 +711,9 @@
             </div>
 
             <div class="form__field">
-              <label for="comment" class="form__label-comment">Комментарий</label>
+              <label for="comment" class="form__label-comment"
+                >Комментарий</label
+              >
               <textarea
                 name="comment"
                 id="comment"
@@ -580,14 +724,12 @@
 
             <div class="form__field">
               <input
-                class="form__check-input visually-hidden" 
-                type="checkbox" 
-                name="regulations" 
-                id="regulations" 
+                class="form__check-input visually-hidden"
+                type="checkbox"
+                name="regulations"
+                id="regulations"
               />
-              <label 
-              class="form__check-laben"
-              for="regulations">
+              <label class="form__check-laben" for="regulations">
                 <span>
                   <svg class="form__check-icon" width="11" height="8">
                     <use href="./images/icons.svg#icon-check"></use>
@@ -606,11 +748,13 @@
         </div>
       </div>
     </div>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-        crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-
   </body>
 </html>
