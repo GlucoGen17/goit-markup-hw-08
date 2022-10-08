@@ -192,9 +192,13 @@
 
 .form__check-laben {
   /* margin-left: 36px; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #757575;
   
 }
 
@@ -226,16 +230,9 @@ border: none;
 fill: #ffffff;
 }
 
-.form__check-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
 .form__check-link {
   color: #2196F3;
+  margin-left: 4px;
 }
 
 .form__btn {

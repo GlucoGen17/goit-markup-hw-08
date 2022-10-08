@@ -77,11 +77,13 @@
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+  gap: 30px;
 }
 
 .projects__item {
-  margin-top: 30px;
-  margin-left: 30px;
+  // margin-top: 30px;
+  // margin-left: 30px;
+
 }
 
 .projects__item:hover .projects__thumb-open,

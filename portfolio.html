@@ -58,27 +58,27 @@
 
         <button type="button" class="menu-open__btn" data-menu-open>
           <svg class="menu-open__icon" width="40" height="40">
-            <use href="./images/symbol-mob.svg#icon-menu-mob"></use>
+            <use href="./images/icons..svg#icon-menu-mob"></use>
           </svg>
         </button>
-        <div class="mob-menu is-hidden flex" data-menu>
-          <div class="mob__container">
+        <div class="mob-menu is-hidden" data-menu>
+          <div class="mob__container container">
             <div>
               <button type="button" class="menu-close__btn" data-menu-close>
                 <svg class="menu-open__icon" width="40" height="40">
-                  <use href="./images/symbol-mob.svg#icon-close-mob"></use>
+                  <use href="./images/icons.svg#icon-close-mob"></use>
                 </svg>
               </button>
               <ul class="mob-menu__list">
                 <li class="mob-menu__item">
                   <a
                     href="./index.html"
-                    class="mob-menu__link link mob-menu__link--current"
+                    class="mob-menu__link link "
                     >Студия</a
                   >
                 </li>
                 <li class="mob-menu__item">
-                  <a href="./portfolio.html" class="mob-menu__link link"
+                  <a href="./portfolio.html" class="mob-menu__link link mob-menu__link--current"
                     >Портфолио</a
                   >
                 </li>
@@ -87,7 +87,7 @@
                 </li>
               </ul>
             </div>
-            <div>
+            <div class="mob-bottom">
               <div class="mob-contacts">
                 <ul class="mob-contacts__list">
                   <li class="mob-contacts__item">
@@ -125,7 +125,7 @@
                   <li class="mob-social__item">
                     <a
                       href=""
-                      class="mob-soc__link link"
+                      class="mob-social__link link"
                       target="_blank"
                       rel="noopener nofollow noreferrer"
                       >Facebook</a
@@ -134,7 +134,7 @@
                   <li class="mob-social__item">
                     <a
                       href=""
-                      class="mob-soc__link link"
+                      class="mob-social__link link"
                       target="_blank"
                       rel="noopener nofollow noreferrer"
                       >LinkedIn</a
@@ -421,7 +421,7 @@
   </main>
     <footer class="footer section">
       <div class="container footer__container">
-          <div>
+          <div class="footer_flex">
             <a class="logo footer__logo link" href="index.html"
               >Web<span class="logo__white">Studio</span></a
             >
@@ -429,7 +429,7 @@
               <ul class="address">
                 <li class="address__item">
                   <a
-                    class="aderess__link--white link"
+                    class="aderess__link aderess__link--white link"
                     href="https://goo.gl/maps/8bVCaFrBpP2hShio7"
                     target="_blank"
                     >г. Киев, пр-т Леси Украинки, 26</a
@@ -437,13 +437,13 @@
                 </li>
                 <li class="address__item">
                   <a
-                    class="aderess__link--grey link"
+                    class="aderess__link aderess__link--grey link"
                     href="mailto:info@example.com"
                     >info@example.com</a
                   >
                 </li>
                 <li class="address__item">
-                  <a class="aderess__link--grey link" href="tel:+380991111111"
+                  <a class="aderess__link aderess__link--grey link" href="tel:+380991111111"
                     >+38 099 111 11 11</a
                   >
                 </li>
@@ -499,10 +499,15 @@
       </div>
     </footer>
     
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-        crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
