@@ -901,12 +901,6 @@ ol {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (min-width: 1200px) {
-  .socials {
-    width: 144px;
-  }
-}
-
 .social__text {
   font-weight: 700;
   font-size: 14px;
@@ -914,6 +908,12 @@ ol {
   text-transform: uppercase;
   color: var(--white-text-color);
   margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .social__text {
+    text-align: start;
+  }
 }
 
 .social__list {
@@ -925,6 +925,9 @@ ol {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 1199px) {
   .social__list {
@@ -968,19 +971,9 @@ ol {
 
 .subscribe {
   margin-top: 60px;
-  -webkit-box-pack: baseline;
-      -ms-flex-pack: baseline;
-          justify-content: baseline;
-}
-@media screen and (min-width: 768px) {
-  .subscribe {
-    margin-top: 60px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe {
-    width: 570px;
-    height: 75px;
     margin-left: auto;
     margin-top: 0;
   }
@@ -991,11 +984,21 @@ ol {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
   color: var(--white-text-color);
-  /* padding: 20px 0px 10px 0px; */
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .subscribe__text {
+    text-align: start;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .subscribe__form {
+    display: table-caption;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscribe__form {
     display: -webkit-box;
@@ -1005,12 +1008,19 @@ ol {
 }
 
 .subscribe__input {
-  width: 358px;
+  width: 450px;
+  height: 50px;
   padding-left: 16px;
   border-radius: 4px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: var(--cap-background-color);
   color: var(--white-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    width: 358px;
+  }
 }
 
 .subscribe__input::-webkit-input-placeholder {
@@ -1068,7 +1078,13 @@ ol {
   letter-spacing: 0.06em;
   cursor: pointer;
   min-height: 43px;
-  margin-left: 12px;
+  margin-left: 125px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__btn {
+    margin-left: 12px;
+    max-height: 50px;
+  }
 }
 
 .subscribe__icon {

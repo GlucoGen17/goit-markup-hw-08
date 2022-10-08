@@ -69,7 +69,7 @@
 
 .socials {
   @media screen and (min-width: 1200px) {
-    width: 144px;
+    // width: 144px;
 
     }
 }
@@ -83,11 +83,11 @@
 
   margin-bottom: 20px;
 
-  
-  // @media screen and (max-width: 1199,5px){
-  //   text-align: center;}  
-  // @media screen and (min-width: 1199,5px){
-  //   text-align: center;}  
+  text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+      }
 }
 
 .social__list {
@@ -95,6 +95,7 @@
   padding: 0;
   margin-top: 0;
   align-items: center;
+  justify-content: center;
   @media screen and (min-width: 1199px){
     justify-content: center;}
 }
@@ -139,16 +140,8 @@
 
 .subscribe {
   margin-top: 60px;
-  justify-content: baseline;
-
-  @media screen and (min-width: 768px) {
-    margin-top: 60px;    
-    }
-  @media screen and (min-width: 768px) and (max-width: 1199.5px){}
     
   @media screen and (min-width: 1200px) {
-    width: 570px;
-    height: 75px;
     margin-left: auto;
     margin-top: 0;
     }
@@ -159,32 +152,42 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-
+  text-align: center;
   color: var(--white-text-color);
 
-  /* padding: 20px 0px 10px 0px; */
+
   margin-bottom: 20px;
 
-  // @media screen and (min-width: 1199,5px){
-  //   justify-content: center;}  
-  // @media screen and (max-width: 1199,5px){
-  //   justify-content: left;}  
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 
 .subscribe__form {
+  @media screen and (min-width: 768px) {
+    display: table-caption;
+    }
   @media screen and (min-width: 1200px) {   
   display: flex;
   }
+
 }
 .subscribe__input {
-  width: 358px;
+  width: 450px;
+  height: 50px;
   padding-left: 16px;
   border-radius: 4px;
+
+  margin-bottom: 20px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: var(--cap-background-color);
   color: var(--white-text-color);
+
+  @media screen and (min-width: 1200px) { 
+    width: 358px;
+  }
 }
 
 .subscribe__input::placeholder {
@@ -216,7 +219,12 @@
 
   cursor: pointer;
   min-height: 43px;
+  margin-left: 125px;
+
+@media screen and (min-width: 1200px) { 
   margin-left: 12px;
+  max-height: 50px;
+  }
 }
 
 .subscribe__icon {
