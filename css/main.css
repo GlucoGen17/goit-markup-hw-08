@@ -1181,6 +1181,12 @@ ol {
   gap: 30px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .projects__item {
+    max-width: 47.5%;
+  }
+}
+
 .projects__item:hover .projects__thumb-open,
 .projects__item:focus .projects__thumb-open {
   -webkit-transform: translateY(0);

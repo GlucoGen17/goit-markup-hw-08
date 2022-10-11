@@ -79,11 +79,13 @@
 }
 
 .projects__item {
-  margin-top: 30px;
-  margin-left: 30px;
+  // margin-top: 30px;
+  // margin-left: 30px;
   
   @media screen and (min-width: 768px) and (max-width: 1199.5px) {
-    max-width: calc((100%-3,9%)/2);
+    max-width: calc((95%)/2);
+    // width: 354px;
+    // height: 440px;
   }
 
 }
@@ -131,6 +133,7 @@
   border: 1px solid #EEEEEE;
   border-top: transparent;
   padding: 20px 24px;
+  // height: 100%;
   // max-width: 354px;
 }
 
