@@ -77,8 +77,12 @@
   bottom: -1px;
 
   background-color: var(--accent-background-color);
-}
 
+
+  @media screen and (min-width: 768px) and (max-width: 1199.5px){
+    bottom: -6px;
+  }
+}
 /* -------------------Контакты--------------------- */
 
 .contact {
@@ -117,6 +121,12 @@
   letter-spacing: 0.02em;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px){
+  font-size: 14px;
+  line-height: 1.14;    
+  }
+
 
   &:hover,
   &:focus {

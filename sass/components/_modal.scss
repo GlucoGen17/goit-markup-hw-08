@@ -199,7 +199,8 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: #757575;
-  
+    @media screen and (min-width: 1200px) {
+      justify-content: center;}
 }
 
 .form__check-laben span {
