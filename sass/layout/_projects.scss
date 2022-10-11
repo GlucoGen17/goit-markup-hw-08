@@ -79,11 +79,11 @@
 }
 
 .projects__item {
-  // margin-top: 30px;
-  // margin-left: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
   
   @media screen and (min-width: 768px) and (max-width: 1199.5px) {
-    width: calc((100%-3,9%)/2);
+    max-width: calc((100%-3,9%)/2);
   }
 
 }
